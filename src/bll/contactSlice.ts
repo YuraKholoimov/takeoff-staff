@@ -89,7 +89,7 @@ export const searchContact = createAsyncThunk(
                 dispatch(setContactThunk(auth.auth.userId));
             }
         } catch (e) {
-            console.log(e)
+            console.error(e)
         }
     }
 )
@@ -100,11 +100,7 @@ const slice = createSlice({
     initialState: {
         contacts: []
     } as InitialStateType,
-    reducers: {
-        // addContactsToState(state: InitialStateType, action: PayloadAction<{ newContact: ContactType }>) {
-        //     state.contacts.unshift(action.payload.newContact);
-        // }
-    },
+    reducers: {},
     extraReducers: builder => {
         builder.addCase(setContactThunk.fulfilled, (state, action) => {
             state.contacts = action.payload

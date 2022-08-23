@@ -27,6 +27,10 @@ const slice = createSlice({
     },
 });
 
+export const appSlice = slice.reducer;
+export const {setIsLoading, setModalFormOpen, setModalInfoOpen} = slice.actions;
+
+// Types
 type InitialStateType = {
     idAuth: boolean
     isLoading: boolean
@@ -42,6 +46,3 @@ export type ModalInfoType = {
     isModalInfoOpen: boolean,
     modalData?: ContactType
 }
-
-export const appSlice = slice.reducer;
-export const {setIsLoading, setModalFormOpen, setModalInfoOpen} = slice.actions;

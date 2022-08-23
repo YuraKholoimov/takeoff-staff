@@ -1,5 +1,6 @@
 {
   "name": "takeoff-staff",
+  "homepage": "https://YuraKholoimov.github.io/takeoff-staff",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,7 +43,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node ./server/server.js",
-    "Db": "json-server -w server/contacts.json -p3002"
+    "Db": "json-server -w server/contacts.json -p3002",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -63,6 +66,7 @@
     ]
   },
   "devDependencies": {
-    "@types/uuid": "^8.3.4"
+    "@types/uuid": "^8.3.4",
+    "gh-pages": "^4.0.0"
   }
 }
