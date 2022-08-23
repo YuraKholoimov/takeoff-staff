@@ -1,0 +1,41 @@
+.snackBarWrapper {
+  width: 400px;
+  height: 70px;
+
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(253, 29, 29, 0.35);
+  border-radius: 10px;
+  animation: showUp 1000ms ease-in;
+}
+
+.hide {
+  bottom: -150px;
+  animation: hide 1000ms ease-in;
+}
+
+@keyframes showUp {
+  from {
+    bottom: -150px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+
+@keyframes hide {
+  from {
+    bottom: 10px;
+    opacity: 1;
+  }
+  to {
+    bottom: -150px;
+    opacity: 0;
+  }
+}

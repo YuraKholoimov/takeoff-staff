@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "first_name": "Юрий111",
+      "last_name": "Холоимов",
+      "email": "yuriykholoimov@gmail.com",
+      "id": "3237fe70-224d-11ed-88c8-d1471d0e58ba"
+    },
+    {
+      "id": "77018280-22eb-11ed-9069-0f166ff617f0",
+      "first_name": "Тамара",
+      "last_name": "Холоимова",
+      "email": "yurakholoimov@ya.ru"
+    },
+    {
+      "id": "af083500-2306-11ed-a9e3-13c75cc795b7",
+      "first_name": "Тамара",
+      "last_name": "Холоимова",
+      "email": "yurakholoimov@ya.ru"
+    }
+  ]
+}
